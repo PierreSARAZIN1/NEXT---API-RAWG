@@ -1,0 +1,319 @@
+$white:#fff;
+$grey:#d0d5dd;
+$darkness: #16122e;
+$darkness: #16122e;
+$blueSky: #2786dc;
+$purple: #ae33f2;
+$blueNight: #2c3176;
+$purpleNight: #4f1878;
+$greyNight: #152d53;
+$purpleDark: #351757;
+$blueElec: #226c93;
+$blueElecNight: #11445c;
+$darknessRGB: rgb(22, 18, 46);
+$blueSkyRGB: rgb(39, 134, 220);
+$purpleRGB: rgb(174, 51, 242);
+$blueNightRGB: rgb(44, 49, 118);
+$purpleNightRGB: rgb(79, 24, 120);
+$greyNightRGB: rgb(21, 45, 83);
+$purpleDarkRGB: rgb(53, 23, 87);
+$blueElecRGB: rgb(34, 108, 147);
+$blueElecNightRGB: rgb(17, 68, 92);
+@font-face {
+    font-family: 'GameOfSquids';
+    src: url('../assets/fonts/GameOfSquids.ttf');
+}
+
+@font-face {
+    font-family: 'Mangonel';
+    src: url('../assets/fonts/Mangonel.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat.';
+    src: url('../assets/fonts/Montserrat.ttf');
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+p {
+    font-family: 'Big Noodles';
+}
+
+body {
+    background-color: $darkness;
+}
+
+.pagetitle {
+    color: $purple;
+    text-align: center;
+    height: 100px;
+}
+
+.titlepagetitle {
+    font-family: 'GameOfSquids';
+    margin-top: 10%;
+}
+
+.searchContainer {
+    height: 100px;
+    text-align: center;
+}
+
+.searchbar {
+    border: none;
+    height: 33px;
+    width: 130px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.searchBtn {
+    background-color: $purple;
+    border: none;
+    color: $white;
+    border-radius: 20px;
+    height: 33px;
+    width: 80px;
+    font-size: 15px;
+}
+
+.divcard {
+    padding-top: 10px;
+    /* padding-bottom: 10px;
+    margin-bottom: 10px; */
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.divcard.not-visible {
+    transform: translateX(50px);
+    opacity: 0;
+    /* transition: transform 0.4s, opacity0.4s; */
+}
+
+.lvl2 {
+    align-items: center;
+    height: auto;
+    margin-bottom: 10px;
+    color: $grey;
+    background: rgba( 53, 23, 87, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10.5px);
+    -webkit-backdrop-filter: blur( 10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.lvl2:hover {
+    background: rgba( 79, 24, 120, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10.5px);
+    -webkit-backdrop-filter: blur( 10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.summerBody {
+    display: flex;
+}
+
+.titleGame {
+    font-family: 'Mangonel';
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.list-images {
+    margin-top: 20px;
+    height: 150px;
+    width: auto;
+}
+
+.dateGame {
+    font-family: 'Mangonel';
+    text-align: center;
+    font-size: 12px;
+}
+
+.detailLink {
+    text-decoration: none;
+    text-align: end;
+    font-family: 'GameOfSquids';
+    color: $purple;
+    margin-bottom: 20px;
+}
+
+.detailArticle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: $grey;
+    background: rgba( 53, 23, 87, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10.5px);
+    -webkit-backdrop-filter: blur( 10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.detailArticle {
+    display: grid;
+    place-items: center;
+}
+
+.detailTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'GameOfSquids';
+    color: $purple;
+}
+
+// DETAILS - IMAGE
+.detailImage {
+    height: 200px;
+    width: auto;
+}
+
+.moreDetails {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'GameOfSquids';
+    color: $purple;
+}
+
+// DETAILS - DESCRIPTION
+.Description-title {
+    text-align: center;
+    font-family: 'GameOfSquids';
+    color: $purple;
+}
+
+.detailDescription {
+    text-align: start;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.spanDetailsDescription {
+    font-family: 'Montserrat';
+}
+
+// DETAILS - DATE
+.detail-release-date {
+    font-family: 'Montserrat';
+}
+
+.spanDate {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'GameOfSquids';
+    color: $purple;
+}
+
+// DETAILS - STUDIOS
+.dev-list {
+    list-style: none;
+}
+
+.dev-link {
+    text-decoration: none;
+}
+
+// DETAILS - TAGS
+.tags-list {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tags-link {
+    text-decoration: none;
+}
+
+// DETAILS - GENRES
+.genres-list {
+    list-style: none;
+}
+
+.genres-link {
+    text-decoration: none;
+}
+
+// DETAILS - PUBLISHERS
+.publishers-list {
+    list-style: none;
+}
+
+.publishers-link {
+    text-decoration: none;
+}
+
+// DETAILS - PLATFORMS
+.platforms-list {
+    list-style: none;
+}
+
+.platforms-link {
+    text-decoration: none;
+}
+
+// DETAILS - WEBSITE
+.website-link {
+    text-align: center;
+    font-family: 'Mangonel';
+}
+
+.game-website-link {
+    text-decoration: none;
+}
+
+// DETAILS - RATINGS
+.rate {
+    font-family: 'Mangonel';
+}
+
+.rating_top {
+    color: $purple;
+}
+
+.ratings-li {
+    list-style: none;
+}
+
+.each-rating {
+    font-family: 'Mangonel';
+}
+
+// DETAILS - STORES
+.buy-list {
+    display: flex;
+    align-items: space;
+}
+
+.store-li {
+    list-style: none;
+}
+
+.store-website {
+    text-decoration: none;
+    font-family: 'Mangonel';
+}
+
+// DETAILS - MORE IMAGES
+.more-images {
+    height: 70px;
+    width: auto;
+}
+
+.images-li {
+    list-style: none;
+}
+
+.images-list {
+    display: flex;
+}
